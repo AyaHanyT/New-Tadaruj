@@ -10,13 +10,6 @@
 
 :root {
     --background: #F0F0F0;
-    --primary-blue: #;
-    --primary-darken-blue: #2B294E;
-    --primary-color-shadow: hsla(0, 0%, 0%, 0.06);
-    --light-bg: #F5F5F5;
-    --dark-bg: #242323;
-    --span-color: #707070;
-    --light-blue: #D8E0FC;
 }
 
 /*--------Home-page--------*/
@@ -80,6 +73,10 @@ section {
 .title.white {
     color: white;
     margin-bottom: 1rem;
+}
+
+#shadow-host-companion {
+    padding: 0;
 }
 
 .page {
@@ -174,27 +171,6 @@ header {
     color: var(--primary-blue);
 }
 
-.nav-menu a.white-btn,
-a.white-btn {
-    display: flex;
-    position: relative;
-    color: #F3F3F3;
-    transition: 0.3s;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: white;
-    color: #002F31;
-    box-shadow: 0 0 14px #00000017;
-    border-radius: 11px;
-    padding: 10px 27px;
-}
-
-.nav-menu a.white-btn:hover,
-a.white-btn:hover {
-    color: #154D4D;
-    box-shadow: 1px 0px 10px #00000069;
-    background-color: #f3f3f3;
-}
 
 
 /* Mobile Navigation */
@@ -279,7 +255,7 @@ a.white-btn:hover {
 
 
 
-/******** cover *******/
+/******** intro *******/
 .intro {
     height: 100vh;
     background-color: #2B294E;
@@ -738,7 +714,119 @@ label {
 
 
 
-/********** projects *****/
+/********** cover *****/
+.cover {
+    padding-top: 0;
+    position: relative;
+    overflow: initial;
+}
+
+.cover img {}
+
+.cover .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simon {
+    background-color: #F28765;
+    color: #F0F0F0;
+    width: 80%;
+    padding: 30px 20% 30px 30px;
+    font-family: 'The-Sans-Bold';
+    z-index: 9;
+    position: absolute;
+    margin-top: -2rem;
+}
+
+.simon h2 {
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 1.2px;
+}
+
+.simon h2 img {
+    width: 42%;
+}
+
+
+
+/******** Services ********/
+.services {
+    background-color: white;
+    padding-top: 10rem;
+}
+
+.services h4 {
+    color: #2B294E;
+    text-align: center;
+    margin: 20px 0 3rem;
+}
+
+.service-card {}
+
+.services .col-lg-3.col-md-4.col-sm-5 {
+    padding: 0;
+}
+
+.services .col-lg-3.col-md-4.col-sm-5:nth-child(1) .service-card {
+    border-right: 3px #C22026 solid;
+    border-bottom: 3px #C22026 solid;
+}
+
+.services .col-lg-3.col-md-4.col-sm-5:nth-child(2) .service-card {
+    border-right: 3px #C22026 solid;
+    border-top: 3px #C22026 solid;
+    border-left: 3px #C22026 solid;
+}
+
+.services .col-lg-3.col-md-4.col-sm-5:nth-child(3) .service-card {
+    border-bottom: 3px #C22026 solid;
+    border-left: 3px #C22026 solid;
+}
+
+.service-card img {
+    width: 155px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.service-RL {
+    background-color: #F0F0F0;
+    margin: 0 10px 10px 10px;
+    padding: 30px 11px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    min-height: 540px;
+}
+
+.service-CN {
+    background-color: white;
+    margin: 0;
+    padding: 30px 11px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    min-height: 550px;
+}
+
+.service-card h3 {
+    color: #2B294E;
+    text-align: center;
+    font-family: 'The-Sans-Bold';
+}
+
+.service-card p {
+    font-size: 22px;
+    text-align: center;
+    line-height: 39px;
+    color: #2B294E;
+}
+
 
 
 /******** footer *********/
@@ -868,18 +956,8 @@ img.icon {
 }
 
 @media screen and (max-width:1440px) {
-    .brief {
-        top: 44%;
-    }
-
-    .about-imgs .small-img:last-of-type {
-        top: -288px;
-        left: 84px;
-    }
-
-    .about-imgs .small-img:first-of-type {
-        right: 54px;
-        top: 74px;
+    .simon h2 img {
+        width: 36%;
     }
 }
 
@@ -890,6 +968,11 @@ img.icon {
 }
 
 @media screen and (max-width:1200px) {
+    .simon {
+        width: 90%;
+        padding: 30px 5% 30px 30px;
+    }
+
     .intro {
         height: fit-content;
     }
@@ -938,7 +1021,12 @@ img.icon {
 
 @media screen and (max-width: 1025px) {}
 
-@media screen and (max-width: 993px) {}
+@media screen and (max-width: 993px) {
+    .service-card p {
+        font-size: 18px;
+        line-height: 33px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .intro {
@@ -1007,6 +1095,10 @@ img.icon {
         margin-bottom: 2rem;
     }
 
+    .simon h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width: 600px) {}
@@ -1076,6 +1168,29 @@ img.icon {
         WIDTH: 67%;
         line-height: 31px;
     }
+
+    .simon h2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .service-RL,
+    .service-CN {
+        min-height: fit-content;
+        padding: 40px 10px;
+    }
+
+    .services .col-lg-3.col-md-4.col-sm-5:nth-child(2) .service-card {
+        border-right: none;
+        border-top: none;
+        border-bottom: 3px #C22026 solid;
+        border-left: 3px #C22026 solid;
+    }
+
+    .services .col-lg-3.col-md-4.col-sm-5:nth-child(3) .service-card {
+        border-right: 3px #C22026 solid;
+        border-left: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1110,6 +1225,22 @@ img.icon {
     .vision .row.flex-row-reverse img.label-img {
         margin-left: 27px;
     }
+    .simon h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .services {
+        padding-top: 8rem;
+    }
+    .service-card img {
+        width: 140px;
+        height: 110px;
+    }
+    .cover img.img-fluid{
+        height: 70vh;
+        object-fit: cover;
+        object-position: left;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1137,12 +1268,15 @@ img.icon {
     .intro .title.white {
         font-size: 38px;
     }
+
     .intro p {
         font-size: 18px;
     }
+
     img.floated {
         width: 152px;
     }
+
     .btn.primary-maron {
         margin-top: 30px;
         font-size: 19px;

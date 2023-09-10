@@ -98,6 +98,7 @@ header {
     background-color: white;
     height: 100px;
     padding: 10px 0;
+    z-index: 99;
 }
 
 .sticky-navbar {
@@ -115,7 +116,7 @@ header {
     -o-transition: transform 1s;
     width: 100% !important;
     margin-top: 0;
-    z-index: 9;
+    z-index: 99;
     box-shadow: 0 1px 10px #cececf24;
 }
 
@@ -220,7 +221,7 @@ a.white-btn:hover {
     /* right: 15px; */
     bottom: 0px;
     left: 0px;
-    z-index: 9999;
+    z-index: 999;
     overflow-y: auto;
     background: #ddd;
     transition: ease-in-out 0.2s;
@@ -324,13 +325,12 @@ img.floated {
 }
 
 
-
 /********* about **********/
 .about {
-    height: 100vh;
-    padding: 2rem;
-    margin-left: 2rem;
-    padding: 120px 0 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .line {
@@ -473,85 +473,126 @@ img.floated {
 }
 
 
+/********* vision **********/
+.white-bg {
+    background-color: white;
+    padding: 40px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 250px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 9px #0000001a;
+}
+
+.white-bg p {
+    font-size: 22px;
+    color: #2B294E;
+    font-family: 'The-Sans-bold';
+    WIDTH: 69%;
+    line-height: 39px;
+}
+
+.vision img.label-img {
+    margin-bottom: -17px;
+    margin-right: 40px;
+}
+
+.vision .row.flex-row-reverse img.label-img {
+    margin-left: 40px;
+    z-index: 9;
+}
+
+.vision .row.flex-row-reverse .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+/******** partners *********/
+.partners {
+    background-color: white;
+}
+
+.partners::before {
+    background-image: url('../img/partners.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    width: 100%;
+    -webkit-width: 100%;
+    height: 10rem;
+    -webkit-height: 10rem;
+    margin-top: -9rem;
+}
+
+.partners-warpper {
+    border-top: 10px solid #F28765;
+    margin-top: 30px;
+    height: 130px;
+    border-bottom: 10px solid #F28765;
+}
+
+
+
 /********* Contact Us **********/
 .contact {
-    background-image: url(../img/contact-us.png);
-    background-position: left;
-    background-size: auto;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding-top: 120px;
+    background-color: white;
 }
 
-.black .navbar-brand img {
-    filter: invert(1);
+.salmon {
+    background-color: #F28765;
+    text-align: center;
+    font-family: 'The-Sans-Bold';
+    color: white;
+    margin: auto;
+    width: fit-content;
+    padding: 24px 34px;
 }
 
-.black .white-btn {
-    border-color: black;
-    color: black;
+.salmon h1 {
+    width: fit-content;
 }
 
-.black .pattern img {
-    filter: invert(1);
+.contact-form {
+    margin: 3rem auto 0;
+    width: 67%;
 }
 
-.black .navbar-toggler {
-    filter: invert(1);
+.contact-form label {
+    margin-bottom: 6px;
 }
 
-.contact form {
-    margin-top: 20vh;
+.contact-form label span {
+    color: #D70505;
+}
+
+.contact-form .btn.primary-maron {
+    margin-top: 0;
 }
 
 .form-control {
     text-align: right;
-    padding: 6px 10px;
-    margin: 0 0 10px 0;
-    border-radius: 6px;
-    font-size: 18px;
-}
-
-.contact .form-control {
-    border: 2px solid #6662a7de;
-}
-
-.darkblue-btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 23px;
-    color: white;
-    background-color: #2B294E;
+    padding: 10px;
+    border-radius: 0;
+    font-size: 22px;
     border: none;
-    min-width: 120px;
-    border-radius: 6px;
-    width: fit-content;
-    font-size: 20px;
-    box-shadow: 0 4px 17px 2px #2b294e28;
+    background-color: #F0F0F0;
+    margin-bottom: 12px;
 }
 
-.submit-box {
-    display: flex;
-    justify-content: flex-end;
+input.form-control,
+select.form-control {
+    height: 60px;
 }
 
-.submit-box .pattern img {
-    top: 18px;
-    right: -22px;
-    z-index: 99;
-}
-
-.white-btn:hover {
-    color: white;
-    text-shadow: 0 5px 8px #ffffff26;
-}
-
-.contact h4 {
-    font-size: 27px;
+.contact h3 {
     color: #2B294E;
-    margin-bottom: 19px;
+    font-family: 'The-Sans-Bold';
+    margin-bottom: 20px;
 }
 
 
@@ -763,9 +804,7 @@ footer {
     background-position: center;
     background-size: cover;
     margin: auto;
-    border-radius: 20px 20px 0 0;
     padding-top: 2rem;
-    z-index: 999;
 }
 
 img.icon {
@@ -897,34 +936,75 @@ img.icon {
     }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1025px) {}
 
-}
-
-@media screen and (max-width: 993px) {
-   
-
-}
+@media screen and (max-width: 993px) {}
 
 @media screen and (max-width: 768px) {
-    .intro{
+    .intro {
         padding: 3rem 0;
     }
+
     .intro .title.white {
         font-size: 59px;
     }
-    .intro-img img{
+
+    .intro-img img {
         max-width: 100%;
     }
+
     img.floated {
         width: 270px;
-    }    
+    }
+
     section {
         padding: 2rem 0;
     }
 
     .about p {
         font-size: 18px;
+    }
+
+    .partners {
+        margin-top: 5rem;
+    }
+
+    .partners::before {
+        background-size: 163%;
+    }
+
+    .salmon h1 {
+        font-size: 25px;
+    }
+
+    .contact-form {
+        width: 95%;
+    }
+
+    .partners::before {
+        margin-top: -7rem;
+    }
+
+    .white-bg p {
+        font-size: 18px;
+        WIDTH: 69%;
+        line-height: 34px;
+    }
+
+    .vision img.label-img {
+        margin-bottom: -14px;
+        margin-right: 37px;
+        width: 160px;
+    }
+
+    .vision .row.flex-row-reverse img.label-img {
+        margin-left: 36px;
+    }
+
+    .white-bg {
+        padding: 30px 20px;
+        min-height: fit-content;
+        margin-bottom: 2rem;
     }
 
 }
@@ -936,90 +1016,136 @@ img.icon {
     .intro {
         padding: 3rem 1rem;
     }
+
     .about .title {
         font-size: 30px;
     }
+
     .about .side.line h2 {
         font-size: 35px;
     }
+
     .feature-card {
         width: 90%;
         margin: auto;
         margin-bottom: 2rem;
     }
-    .counts{
+
+    .counts {
         padding: 3rem 0;
     }
+
     .mobile-nav {
         width: 45%;
     }
+
     .navbar-toggler {
         bottom: unset;
         left: 8%;
     }
-    footer{
+
+    footer {
         padding: 2rem 2rem 0;
     }
+
     .about ul {
         color: #C22026;
         font-size: 24px;
     }
+
     .about ul li {
         border-right: 5px solid #2B294E;
         padding-right: 7px;
-        margin: 17px;    
+        margin: 17px;
     }
+
     .intro-img img {
         height: fit-content;
-    }    
+    }
+
+    .partners {
+        margin-top: 2rem;
+    }
+
+    .partners::before {
+        background-size: 194%;
+    }
+
+    .white-bg p {
+        font-size: 16px;
+        WIDTH: 67%;
+        line-height: 31px;
+    }
 }
-
-
 
 @media screen and (max-width: 480px) {
     .mobile-nav {
         width: 74%;
     }
+
     .intro .title.white {
         font-size: 50px;
     }
+
     .about .title {
         font-size: 27px;
     }
+
     .about .side.line h2 {
         font-size: 30px;
     }
+
     .about .side hr {
         width: 47%;
     }
+
     .about p {
         width: 96%;
     }
+
+    .vision img.label-img {
+        margin-right: 27px;
+    }
+
+    .vision .row.flex-row-reverse img.label-img {
+        margin-left: 27px;
+    }
 }
-
-
 
 @media screen and (max-width: 400px) {
     .about .side.line h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
+
     .about .title {
-        font-size: 23px;
+        font-size: 21px;
     }
+
     .about p {
         width: 100%;
+        line-height: 38px;
     }
+
     .about ul {
         font-size: 22px;
     }
+
     .about ul li {
         margin: 14px 12px;
     }
+
     .intro .title.white {
-        font-size: 42px;
+        font-size: 38px;
+    }
+    .intro p {
+        font-size: 18px;
     }
     img.floated {
         width: 152px;
+    }
+    .btn.primary-maron {
+        margin-top: 30px;
+        font-size: 19px;
     }
 }
 

@@ -11,6 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta property="og:site_name" content="Tadaruj">
     <meta property="og:title" content="Tadaruj for marketing">
     <meta property="og:description" content="Tadaruj for marketing">
@@ -43,7 +46,7 @@
                                 <a class="d-flex" href="about.html">من نحن</a>
                             </li>
                             <li>
-                                <a class="d-flex" href="">مشاريعنا</a>
+                                <a class="d-flex" href="projects.html">مشاريعنا</a>
                             </li>
                             <li>
                                 <a class="d-flex" href="services.html">خدماتنا</a>
@@ -52,7 +55,7 @@
                                 <a class="d-flex" href="about.html">تواصل معنا</a>
                             </li>
                             <li>
-                                <a class="d-flex" href="about.html">أنضم للفريق</a>
+                                <a class="d-flex" href="join.html">أنضم للفريق</a>
                             </li>
                         </ul>
                     </nav>
@@ -109,7 +112,35 @@
 
         <section class="partners">
             <div class="partners-warpper">
-
+                <div class="owl-carousel  partners-carousel">
+                    <div class="item">
+                        <img src="assets/img/example-3.webp">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-4.png">
+                    </div>
+                    <div class="item">
+                       <img src="assets/img/example-1.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-3.webp">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-4.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-5.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-1.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/example-2.png">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -131,10 +162,20 @@
                     </div>
                     <div class="form-group">
                         <label>
-                            الهاتف
+                            رقم الجوال
                             <span>*</span>
                         </label>
-                        <input type="tel" required name="phone" class="form-control" id="phone" />
+                        <div class="row">
+                            <div class="col-sm-9 col-9">
+                                <input type="tel" required name="phone" class="form-control" id="phone" />
+                            </div>
+                            <div class="col-sm-3 col-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="+966">SA+966</option>
+                                    <option value="+971">SA+966</option>
+                                  </select>
+                            </div>                            
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>
@@ -145,7 +186,7 @@
                     </div>
                     <div class="form-group">
                         <label>
-                        رسالتك
+                        نبذة عن مشروعك
                             <span>*</span>
                         </label>
                         <textarea class="form-control" id="msg" rows="5"></textarea>
@@ -245,6 +286,9 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fa-pro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

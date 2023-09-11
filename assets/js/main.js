@@ -76,3 +76,20 @@ $('.partners-carousel').owlCarousel({
     }
   }
 })
+
+
+$('.project-carousel').owlCarousel({
+  rtl:true,
+  loop:true,
+  margin:0,
+  nav:true,
+  loop:true,
+  singleItem: true,
+  items:1,
+  dots : true,
+  autoplay:true,
+  autoplayHoverPause:true,
+  autoplayTimeout:3000,
+  autoplaySpeed: 1000,
+  navText : ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"]
+})

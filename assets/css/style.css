@@ -508,7 +508,7 @@ img.floated {
 .partners-warpper {
     border-top: 10px solid #F28765;
     margin-top: 30px;
-   border-bottom: 10px solid #F28765;
+    border-bottom: 10px solid #F28765;
     padding: 10px;
     cursor: pointer;
 }
@@ -532,8 +532,9 @@ img.floated {
 /********* Contact Us **********/
 .contact {
     background-color: white;
-padding: 4rem 21%;
+    padding: 4rem 21%;
 }
+
 .salmon {
     background-color: #F28765;
     text-align: center;
@@ -563,7 +564,8 @@ padding: 4rem 21%;
     margin-top: 0;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
     text-align: right;
     padding: 10px;
     border-radius: 0;
@@ -574,9 +576,11 @@ padding: 4rem 21%;
     border: 1px solid #2B294E;
     color: #2B294E;
 }
-.form-select{
+
+.form-select {
     color: #D30000;
 }
+
 input.form-control,
 select.form-select {
     height: 60px;
@@ -588,7 +592,7 @@ select.form-select {
     margin-bottom: 20px;
 }
 
-input[type="file"]{
+input[type="file"] {
     background-color: white;
     border: none;
 }
@@ -597,18 +601,88 @@ input[type="file"]{
 
 
 /******** Join us **********/
-.join{
+.join {
     max-height: calc(100vh - 100px);
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contact p{
+
+.contact p {
     color: #C22026;
     text-align: center;
     width: 90%;
     margin: 20px auto 0;
+}
+
+
+
+/******** Projects **********/
+.projects {
+    background-color: white;
+    padding: 4rem 18%;
+}
+.projects .row{
+    margin-bottom: 4rem;
+}
+.owl-carousel.project-carousel img {
+    width: 100%;
+}
+
+.proj-data h4 {
+    color: #2B294E;
+    font-family: 'The-Sans-Bold';
+    font-size: 24px;
+}
+
+.proj-data h4 hr {
+    height: 3px;
+    color: #C22026;
+    opacity: 1;
+}
+
+.proj-data p {
+    color: black;
+    font-size: 22px;
+    width: 90%;
+    margin: 3rem 1rem;
+}
+
+.owl-carousel.project-carousel .owl-nav {
+    position: absolute;
+    top: calc(50% - 20px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.owl-carousel.project-carousel .owl-nav button.owl-prev,
+.owl-carousel.project-carousel .owl-nav button.owl-next {
+    font-size: 40px;
+    color: #C22026;
+}
+
+.fa,
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 100 !important;
+}
+
+.owl-dots {
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.owl-carousel.project-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #C22026;
+    border-radius: 50%;
+    margin-right: 6px;
 }
 
 
@@ -929,8 +1003,12 @@ img.icon {
         font-size: 18px;
         line-height: 33px;
     }
-    .contact{
+
+    .contact {
         padding: 4rem 10%;
+    }
+    .projects{
+        padding: 4rem 8%;
     }
 }
 
@@ -1001,16 +1079,31 @@ img.icon {
         font-size: 35px;
         line-height: 50px;
     }
+
     .owl-carousel.partners-carousel .owl-item img {
         max-width: 188px;
         height: 38px;
     }
+
     .contact {
         padding: 2rem 3%;
     }
-    input.form-control, select.form-select {
+
+    input.form-control,
+    select.form-select {
         height: 50px;
         font-size: 18px;
+    }
+    .projects{
+        padding: 2rem 0;
+    }
+    .proj-data{
+        padding-top: 10px;
+    }
+    .proj-data p {
+        font-size: 20px;
+        width: 100%;
+        margin: 1rem 1rem;
     }
 
 }
@@ -1105,9 +1198,13 @@ img.icon {
         border-right: 3px #C22026 solid;
         border-left: none;
     }
+
     .owl-carousel.partners-carousel .owl-item img {
         max-width: 168px;
         height: 37px;
+    }
+    .owl-carousel.project-carousel img {
+height: 375px;
     }
 }
 
@@ -1143,18 +1240,22 @@ img.icon {
     .vision .row.flex-row-reverse img.label-img {
         margin-left: 27px;
     }
+
     .simon h2 {
         font-size: 20px;
         line-height: 35px;
     }
+
     .services {
         padding-top: 8rem;
     }
+
     .service-card img {
         width: 140px;
         height: 110px;
     }
-    .cover img.img-fluid{
+
+    .cover img.img-fluid {
         height: 70vh;
         object-fit: cover;
         object-position: left;

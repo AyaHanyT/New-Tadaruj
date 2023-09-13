@@ -78,7 +78,7 @@ $('.partners-carousel').owlCarousel({
 })
 
 
-$('.project-carousel').owlCarousel({
+$('.branding-carousel').owlCarousel({
   rtl:true,
   loop:true,
   margin:0,

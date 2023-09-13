@@ -10,6 +10,7 @@
 
 :root {
     --background: #F0F0F0;
+    --primary-blue: #2B294E;
 }
 
 /*--------Home-page--------*/
@@ -61,6 +62,10 @@ a {
 section {
     overflow: hidden;
     padding: 4rem 0;
+}
+
+main section:first-of-type {
+    padding: 2rem 0;
 }
 
 .title {
@@ -148,29 +153,17 @@ header {
 }
 
 .nav-menu a:hover,
-.nav-menu .active>a,
+.nav-menu a.active,
 .nav-menu li:hover>a {
-    color: black;
+    color: #2B294E;
     text-decoration: none;
-    background-color: var(--light-blue);
+    background-color: #e5e4f3;
     border-radius: 6px;
 }
 
 .gap-10 {
     gap: 10px;
 }
-
-.link {
-    display: flex;
-    align-items: center;
-    font-family: 'ae_AlMothnna';
-    gap: 4px;
-}
-
-.link.blue {
-    color: var(--primary-blue);
-}
-
 
 
 /* Mobile Navigation */
@@ -618,38 +611,107 @@ input[type="file"] {
 
 
 
-/******** Projects **********/
+/******** projects *********/
 .projects {
+    background-color: white;
+}
+
+.projects .row {
+    margin-top: 5rem;
+}
+
+.projects .row:nth-child(2) .cat-img img {
+    border-top: 20px solid #F28765;
+    border-left: 20px solid #F28765;
+    height: 84vh;
+}
+
+.projects .row:nth-child(3) .cat-img img {
+    border-top: 20px solid #F28765;
+    border-right: 20px solid #F28765;
+    height: 76vh;
+}
+
+.projects .row:nth-child(3) .cat-data .btn.primary-maron {
+    margin-right: auto;
+}
+
+.cat-img img {
+    width: 100%;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.cat-data {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projects h4 {
+    color: #C22026;
+    font-family: 'The-Sans-Bold';
+    font-size: 22px;
+}
+
+.projects hr {
+    color: #F28765;
+    opacity: 1;
+    height: 3px;
+    margin-bottom: 2rem;
+}
+
+.projects p {
+    color: black;
+    font-size: 20px;
+    width: 90%;
+    line-height: 36px;
+    margin-bottom: 2rem;
+}
+
+.projects .btn.primary-maron {
+    padding: 5px 55px;
+    width: fit-content;
+}
+
+
+
+
+/******** Branding **********/
+.branding {
     background-color: white;
     padding: 4rem 18%;
 }
-.projects .row{
+
+.branding .row {
     margin-bottom: 4rem;
 }
-.owl-carousel.project-carousel img {
+
+.owl-carousel.branding-carousel img {
     width: 100%;
 }
 
-.proj-data h4 {
+.brand-data h4 {
     color: #2B294E;
     font-family: 'The-Sans-Bold';
     font-size: 24px;
 }
 
-.proj-data h4 hr {
+.brand-data h4 hr {
     height: 3px;
     color: #C22026;
     opacity: 1;
 }
 
-.proj-data p {
+.brand-data p {
     color: black;
     font-size: 22px;
     width: 90%;
     margin: 3rem 1rem;
 }
 
-.owl-carousel.project-carousel .owl-nav {
+.owl-carousel.branding-carousel .owl-nav {
     position: absolute;
     top: calc(50% - 20px);
     display: flex;
@@ -657,8 +719,8 @@ input[type="file"] {
     width: 100%;
 }
 
-.owl-carousel.project-carousel .owl-nav button.owl-prev,
-.owl-carousel.project-carousel .owl-nav button.owl-next {
+.owl-carousel.branding-carousel .owl-nav button.owl-prev,
+.owl-carousel.branding-carousel .owl-nav button.owl-next {
     font-size: 40px;
     color: #C22026;
 }
@@ -669,7 +731,7 @@ input[type="file"] {
     font-weight: 100 !important;
 }
 
-.owl-dots {
+.owl-carousel.branding-carousel .owl-dots {
     position: absolute;
     top: 95%;
     width: 100%;
@@ -677,12 +739,72 @@ input[type="file"] {
     justify-content: center;
 }
 
-.owl-carousel.project-carousel button.owl-dot {
+.owl-carousel.branding-carousel button.owl-dot {
     width: 10px;
     height: 10px;
     border: 1px solid #C22026;
     border-radius: 50%;
     margin-right: 6px;
+}
+
+.branding .row:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+/******* social ********/
+.social {
+    background-color: white;
+}
+
+.social .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-post {
+    width: 44vw;
+    height: 78vh;
+    margin-bottom: 9vh;
+}
+
+.social-post img {
+    height: 58vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-data {
+    display: flex;
+    border: 2px solid #575252;
+    align-items: center;
+    height: 130px;
+}
+
+.pos-log {
+    width: 36%;
+}
+
+.pos-ti {
+    width: 64%;
+    border-right: 2px solid #575252;
+}
+
+.post-data>div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.pos-log img {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
 
@@ -694,7 +816,6 @@ input[type="file"] {
     overflow: initial;
 }
 
-.cover img {}
 
 .cover .container {
     display: flex;
@@ -736,8 +857,6 @@ input[type="file"] {
     text-align: center;
     margin: 20px 0 3rem;
 }
-
-.service-card {}
 
 .services .col-lg-3.col-md-4.col-sm-5 {
     padding: 0;
@@ -942,6 +1061,15 @@ img.icon {
     .intro-img img {
         width: 704px;
     }
+
+    .projects .row:nth-child(2) .cat-img img,
+    .projects .row:nth-child(3) .cat-img img {
+        height: fit-content;
+    }
+
+    .cat-data {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -996,7 +1124,24 @@ img.icon {
     }
 }
 
-@media screen and (max-width: 1025px) {}
+@media screen and (max-width: 1025px) {
+    .post-data {
+        height: 104px;
+    }
+
+    .social-post {
+        height: 65vh;
+    }
+
+    .social-post img {
+        height: calc(100% - 94px);
+    }
+
+    .pos-log img {
+        max-height: 100%;
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 993px) {
     .service-card p {
@@ -1007,9 +1152,43 @@ img.icon {
     .contact {
         padding: 4rem 10%;
     }
-    .projects{
+
+    .branding {
         padding: 4rem 8%;
     }
+
+    .projects p {
+        width: 100%;
+        margin-bottom: 0rem;
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .cat-data {
+        padding: 20px 24px;
+    }
+
+    .projects .row:nth-child(2) .cat-img img,
+    .projects .row:nth-child(3) .cat-img img {
+        height: fit-content;
+    }
+
+    .projects .btn.primary-maron {
+        padding: 4px 49px;
+        width: fit-content;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .social-post {
+        height: 57vh;
+    }
+    .post-data {
+        height: 92px;
+    }
+    .h5, h5 {
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1094,18 +1273,63 @@ img.icon {
         height: 50px;
         font-size: 18px;
     }
-    .projects{
+
+    .branding {
         padding: 2rem 0;
     }
-    .proj-data{
+
+    .brand-data {
         padding-top: 10px;
     }
-    .proj-data p {
+
+    .brand-data p {
         font-size: 20px;
         width: 100%;
         margin: 1rem 1rem;
     }
 
+    .cat-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cat-img img {
+        width: 380px;
+    }
+
+    .projects h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cat-data {
+        padding: 12px 16px;
+    }
+
+    .projects hr {
+        margin-bottom: 1rem;
+    }
+
+    .projects p {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .projects .btn.primary-maron {
+        padding: 5px 46px;
+        font-size: 16px;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .projects .row {
+        margin-top: 2rem;
+    }
+    .social-post {
+        height: 51vh;
+        width: 51vw;
+    }
 }
 
 @media screen and (max-width: 600px) {}
@@ -1203,8 +1427,33 @@ img.icon {
         max-width: 168px;
         height: 37px;
     }
-    .owl-carousel.project-carousel img {
-height: 375px;
+
+    .owl-carousel.branding-carousel img {
+        height: 375px;
+    }
+
+    .projects .row:nth-child(2) .cat-img img {
+        border-top: 14px solid #F28765;
+        border-left: 14px solid #F28765;
+    }
+
+    .projects .row:nth-child(3) .cat-img img {
+        border-top: 14px solid #F28765;
+        border-right: 14px solid #F28765;
+    }
+
+    .projects p {
+        line-height: 29px;
+        letter-spacing: -0.5px;
+    }
+
+    .cat-img img {
+        width: 310px;
+        padding: 0;
+    }
+    .social-post {
+        height: 62vh;
+        width: 64vw;
     }
 }
 
@@ -1260,6 +1509,10 @@ height: 375px;
         object-fit: cover;
         object-position: left;
     }
+    .social-post {
+        height: 56vh;
+        width: 71vw;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1299,6 +1552,10 @@ height: 375px;
     .btn.primary-maron {
         margin-top: 30px;
         font-size: 19px;
+    }
+    .social-post {
+        height: 56vh;
+        width: 85vw;
     }
 }
 

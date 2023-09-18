@@ -80,7 +80,6 @@ $('.partners-carousel').owlCarousel({
 
 $('.branding-carousel').owlCarousel({
   rtl:true,
-  loop:true,
   margin:0,
   nav:true,
   loop:true,
@@ -93,3 +92,27 @@ $('.branding-carousel').owlCarousel({
   autoplaySpeed: 1000,
   navText : ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"]
 })
+
+$('.feedback-carousel').owlCarousel({
+  rtl:true,
+  margin:0,
+  nav:false,
+  loop:true,
+  singleItem: true,
+  items:1,
+  dots : false,
+  autoplay:true,
+  autoplayHoverPause:true,
+  autoplayTimeout:3000,
+  autoplaySpeed: 1000,
+  navText : ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"]
+})
+
+
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+  

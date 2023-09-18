@@ -11,6 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta property="og:site_name" content="Tadaruj">
     <meta property="og:title" content="Tadaruj for marketing">
     <meta property="og:description" content="Tadaruj for marketing">
@@ -24,19 +27,20 @@
     <title>Tadaruj</title>
 </head>
 
-<body id="Home-page">
+<body>
     <main class="page">
         <header id="header" class="d-flex">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/img/tadaruj-logo.png" alt="Matrix Accademy" class="img-fluid">
+                            <img src="assets/img/logo-img.svg" class="img-fluid">
+                            <img src="assets/img/logo-written.svg" class="img-fluid">
                         </a>
                     </div>
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                              <li>
+                            <li>
                                 <a class="active" href="index.html">الرئيسية</a>
                             </li>
                             <li>
@@ -49,10 +53,10 @@
                                 <a href="services.html">خدماتنا</a>
                             </li>
                             <li>
-                                <a href="about.html#contact">تواصل معنا</a>
+                                <a href="about.html">تواصل معنا</a>
                             </li>
                             <li>
-                                <a href="join.html">انضم لفريقنا</a>
+                                <a href="join.html">أنضم للفريق</a>
                             </li>
                         </ul>
                     </nav>
@@ -66,9 +70,9 @@
         </header>
 
         <section class="intro">
-            <div class="container">
+            <div class="container-md">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 col-md-7 col-12">
                         <h1 class="title white">
                             إبداعنا يصنع الفرق
                         </h1>
@@ -81,134 +85,147 @@
                         </a>
                         <img src="assets/img/Asset 2.png" class="floated">
                     </div>
-                    <div class="col-lg-5 intro-img">
-                        <img src="assets/img/ma.png">
+                    <div class="col-lg-6 col-md-5 intro-img col-12">
+                        <img src="assets/img/Asset 1.png" class="floated">
+                        <!-- <img src="assets/img/main-img.png" class="main-img"> -->
+                        <img src="assets/img/laptop.png" class="main-img">
+                        <img src="assets/img/rocket.png" class="rocket">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="half line">
+                    <h2>في تدرج</h2>
+                    <hr>
+                </div>
+                <h1 class="title">
+                    ندير العلامة التجارية بأفكار جديده
+                </h1>
+                <div class="side line">
+                    <h2> وإبداع متواصل</h2>
+                    <hr>
+                </div>
+                <p>
+                    تأسست شركة تدرج عام 2020 على يد متخصصين في المجال
+                    الأبداعي المهتمين بالإرتقاء بالمشاريع و تحقيق النجاح
+                    حتى المدى البعيد
+                    <strong>لذلك نستند على</strong>
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        الأحترافية
+                    </li>
+                    <li>
+                        الاستدامه
+                    </li>
+                    <li>
+                        الابتكار
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="half line">
+                    <h2>ما يميزنا</h2>
+                    <hr>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <div class="feature-card">
+                            <img class="img-fluid" src="assets/img/lamp-f.png">
+                            <p>
+                                إدارة العلامات التجارية من خلال تقديم خدمتي بناء العلامة التجارية ومظهرها بعمق و تفرد
+                                و ترسيخها من خلال التسويق الإلكتروني
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <div class="feature-card">
+                            <img class="img-fluid" src="assets/img/connect-f.png">
+                            <p>
+                                نساعدك في التخطيط لحملاتك وإختيار المنصات و الأدوات المناسبة لمشروعك
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <div class="feature-card">
+                            <img class="img-fluid" src="assets/img/Like-f.png">
+                            <p>
+                                نسعى لتقديم اعلى خدمة لإرضاء عملائنا والإرتقاء معهم لتحقيق رؤيتهم والوصول لأهدافهم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counts">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-3 col-4">
+                        <div class="count-card">
+                            <img class="img-fluid" src="assets/img/users.png">
+                            <h4>
+                                +<span data-toggle="counter-up">200</span>
+                            </h4>
+                            <h3>عميل</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-4">
+                        <div class="count-card">
+                            <img class="img-fluid" src="assets/img/projects.png">
+                            <h4>
+                                +<span data-toggle="counter-up">201</span>
+                            </h4>
+                            <h3>مشروع</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-4">
+                        <div class="count-card">
+                            <img class="img-fluid" src="assets/img/calculator.png">
+                            <h4>
+                                +<span data-toggle="counter-up">3</span>
+                            </h4>
+                            <h3>سنوات خبرة</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedbacks">
+            <div class="container">
+                <div class="half line">
+                    <h2>أراء العملاء</h2>
+                    <hr>
+                </div>
+
+
+                <div class="feedback">
+                    <div class="owl-carousel feedback-carousel">
+                        <div class="item">
+                            <img src="assets/img/gray-bg.png">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-    <section class="about">
-        <div class="container">
-            <div class="half line">
-                <h2>في تدرج</h2>
-                <hr>
-            </div>
-            <h1 class="title">
-                ندير العلامة التجارية بأفكار جديده
-            </h1>
-            <div class="side line">
-                <h2> وإبداع متواصل</h2>
-                <hr>
-            </div>
-            <p>
-                تأسست شركة تدرج عام 2020 على يد متخصصين في المجال
-                الأبداعي المهتمين بالإرتقاء بالمشاريع و تحقيق النجاح
-                حتى المدى البعيد
-                <strong>لذلك نستند على</strong>
-            </p>
-            <ul class="list-unstyled">
-                <li>
-                    الأحترافية
-                </li>
-                <li>
-                    الاستدامه
-                </li>
-                <li>
-                    الابتكار
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <div class="half line">
-                <h2>ما يميزنا</h2>
-                <hr>
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="feature-card">
-                        <img class="img-fluid" src="assets/img/lamp-f.png">
-                        <p>
-                            إدارة العلامات التجارية من خلال تقديم خدمتي بناء العلامة التجارية ومظهرها بعمق و تفرد
-                            و ترسيخها من خلال التسويق الإلكتروني
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="feature-card">
-                        <img class="img-fluid" src="assets/img/connect-f.png">
-                        <p>
-                            إدارة العلامات التجارية من خلال تقديم خدمتي بناء العلامة التجارية ومظهرها بعمق و تفرد
-                            و ترسيخها من خلال التسويق الإلكتروني
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="feature-card">
-                        <img class="img-fluid" src="assets/img/Like-f.png">
-                        <p>
-                            إدارة العلامات التجارية من خلال تقديم خدمتي بناء العلامة التجارية ومظهرها بعمق و تفرد
-                            و ترسيخها من خلال التسويق الإلكتروني
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="counts">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-3 col-4">
-                    <div class="count-card">
-                        <img class="img-fluid" src="assets/img/users.png">
-                        <h3>+200</h3>
-                        <h2>عميل</h2>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-4">
-                    <div class="count-card">
-                        <img class="img-fluid" src="assets/img/projects.png">
-                        <h3>201+</h3>
-                        <h2>مشروع</h2>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-4">
-                    <div class="count-card">
-                        <img class="img-fluid" src="assets/img/calculator.png">
-                        <h3>+3</h3>
-                        <h2>سنوات خبرة</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="feedbacks">
-        <div class="container">
-            <div class="half line">
-                <h2>أراء العملاء</h2>
-                <hr>
-            </div>
-            <div class="feedback">
-
-            </div>
-        </div>
-    </section>
-
 
 
 
     <footer class="text-white text-lg-start">
         <div class="container pt-4">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-12 mb-4 footer-block">
+                <div class="col-lg-4 col-md-12 footer-block">
                     <a href="index.html">
-                        <img class="img-fluid" src="assets/img/footer-logo.png">
+                        <img class="img-fluid" src="assets/img/footer-logo.svg">
                     </a>
                     <p>
                         تدرج شركة سعودية قائمة على فريق من المتخصصين
@@ -234,8 +251,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-md-0 footer-block">
-                    <h2>أهم العناوين</h2>
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-block">
+                    <h4 class="mb-20">أهم العناوين</h4>
                     <ul class="list-unstyled mb-0">
                         <li>
                             <a href="" class="text-white">الملف التعريفي</a>
@@ -251,21 +268,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-md-0 footer-block">
-                    <h2>معلومات التواصل</h2>
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-block">
+                    <h4>معلومات التواصل</h4>
+                    <br>
                     <span>لا تتردد بالتواصل معنا....</span>
                     <ul class="list-unstyled">
                         <li>
                             <a href="mailto:tadaruj@email.com" class="text-white">
                                 tadaruj@email.com
-                                <img class="icon" src="assets/img/envelop.png">
                             </a>
+                            <img class="icon" src="assets/img/envelop.png">
                         </li>
                         <li>
-                            <a href="tel:+966537464027" class="text-white">
+                            <a href="tel:+966537464027" class="text-white f-20">
                                 +966537464027
-                                <img class="icon" src="assets/img/phone.png">
                             </a>
+                            <img class="icon" src="assets/img/phone.png">
                         </li>
                     </ul>
                 </div>
@@ -283,7 +301,12 @@
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/fa-pro.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

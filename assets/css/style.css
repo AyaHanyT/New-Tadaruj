@@ -1702,6 +1702,15 @@ img.icon {
         bottom: 33%;
         right: 27%;
     }
+    .intro-img img.main-img {
+        height: fit-content;
+        -webkit-height: fit-content;
+        height: -webkit-height fit-content;
+        width: 350px;
+        width: -webkit-width 350px;
+        -webkit-width : 350px;
+        width: -webkit-fill-available;
+    }
     .about .title {
         font-size: 28px;
     }
